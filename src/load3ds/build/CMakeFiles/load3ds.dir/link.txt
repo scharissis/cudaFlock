@@ -1,0 +1,2 @@
+/usr/bin/ar cr libload3ds.a  CMakeFiles/load3ds.dir/KDCamera.cpp.o CMakeFiles/load3ds.dir/KDLight.cpp.o CMakeFiles/load3ds.dir/KDMaterial3DS.cpp.o CMakeFiles/load3ds.dir/KDObject.cpp.o CMakeFiles/load3ds.dir/KDScene3DS.cpp.o CMakeFiles/load3ds.dir/KDScene.cpp.o CMakeFiles/load3ds.dir/KDTexture3DS.cpp.o
+/usr/bin/ranlib libload3ds.a

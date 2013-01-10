@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/3ds.dir/main.cpp.o  -o 3ds -rdynamic libload3ds.a -lglut 

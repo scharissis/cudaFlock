@@ -1,0 +1,30 @@
+License
+- Need to add one!
+
+Compilation
+- Automate SDK directory discovery 
+- Support compilation for different device architectures?
+
+GL
+- Create a new object - SceneRenderer which takes care of the skybox, floor, etc - instead of it being in flock.cpp...
+- Possibly need to sort particles for correct depth rendering (eg. with bilboarded spheres)
+
+CUDA
+- Barnes-Hut (GPU Computing Gems, pg.76)
+- FMM (GPU Computing Gems, pg. 114)
+- Add multi-gpu functionality
+		- All data resides in host memory (works great, since it's not bandwidth bound for 4 GPU's)
+		- Single host thread manages all devices
+		- A stream for each GPU, with appropriate synchronisation
+		- Transfer data to rendering GPU and render from PBO
+
+MODELS
+- Would be nice to point to one in the cmd-line args
+		
+MISC
+- Add new parameters:
+	- Particle speed
+	- Scene dimensions (x,y,z)
+
+BUGS
+- Dual pos arrays; neaten the code for that (eg. '1' to reset pos might affect wrong array if done at the wrong time).

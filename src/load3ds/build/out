@@ -1,0 +1,595 @@
+here1
+++ main
+ ++ mesh
+  ++ material
+   ++ name: FlatBlac
+  ++ material
+   ++ name: Seat
+  ++ material
+   ++ name: Glass
+  ++ material
+   ++ name: Darkgrey
+    ++ texure1 filename:  DARKGREY.JPG
+  ++ material
+   ++ name: Blactire
+  ++ material
+   ++ name: SilvDeep
+  ++ material
+   ++ name: Whitemet
+  ++ material
+   ++ name: Steel
+  ++ material
+   ++ name: BlueLigh
+  ++ material
+   ++ name: Estabili
+  ++ material
+   ++ name: Bottesta
+  ++ material
+   ++ name: Lighgrey
+    ++ texure1 filename:  LIGHGREY.JPG
+  ++ material
+   ++ name: FlatWhit
+  ++ material
+   ++ name: Fuselage
+  ++ material
+   ++ name: Topfuse
+  ++ material
+   ++ name: Botfuse
+  ++ material
+   ++ name: Fuse2
+  ++ material
+   ++ name: SilvDeep1
+  ++ material
+   ++ name: Grid
+  ++ material
+   ++ name: Inlet
+  ++ material
+   ++ name: Topwing
+  ++ material
+   ++ name: Botwing
+  ++ material
+   ++ name: Topwing1
+  ++ material
+   ++ name: Botwing1
+  ++ material
+   ++ name: Hornfuel
+  ++ material
+   ++ name: Ruddleft
+  ++ material
+   ++ name: Rudder
+  ++ material
+   ++ name: Missil2
+  ++ material
+   ++ name: Nozzle
+  ++ material
+   ++ name: Missil
+  ++ material
+   ++ name: Nozzle2
+  ++ material
+   ++ name: RedLigh
+  ++ material
+   ++ name: Ruddrigh
+  ++ material
+   ++ name: Win2
+  ++ material
+   ++ name: Weapsupp
+  ++ object trimesh: HornCock
+   ++ vertices: 16
+   ++ object matrix 
+      0  0  -1  0
+      -1  0  0  0
+      0  1  0  0
+      93.6592  1040.55  531.822  1
+   ++ faces: 24
+   ++ face material applied: FlatBlac
+    ++ on faces: 24
+  ++ object trimesh: HornSeat
+   ++ vertices: 16
+   ++ object matrix 
+      0  0  -1  0
+      -1  0  0  0
+      0  1  0  0
+      -98.5373  744.721  729.702  1
+   ++ faces: 28
+   ++ face material applied: Seat
+    ++ on faces: 28
+  ++ object trimesh: HornCono
+   ++ vertices: 52
+   ++ mapping uv: 52
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      332.177  0  8095.07  1
+   ++ faces: 60
+   ++ face material applied: Glass
+    ++ on faces: 60
+  ++ object trimesh: HornCon3
+   ++ vertices: 214
+   ++ mapping uv: 214
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      0.735858  1001.18  348.903  1
+   ++ faces: 98
+   ++ face material applied: Darkgrey
+    ++ on faces: 98
+  ++ object trimesh: HornBra2
+   ++ vertices: 59
+   ++ mapping uv: 59
+   ++ object matrix 
+      1  2.92366e-08  -1.12166e-08  0
+      -2.92366e-08  0.743393  -0.668854  0
+      -1.12166e-08  0.668854  0.743393  0
+      -0.037488  773.461  -4345.64  1
+   ++ faces: 110
+   ++ face material applied: Darkgrey
+    ++ on faces: 110
+  ++ object trimesh: HormBtir
+   ++ vertices: 216
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      0.538348  -511.191  -3032.34  1
+   ++ faces: 360
+   ++ face material applied: Blactire
+    ++ on faces: 360
+  ++ object trimesh: HornBge2
+   ++ vertices: 82
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0372744  -231.757  -2642.51  1
+   ++ faces: 82
+   ++ face material applied: SilvDeep
+    ++ on faces: 82
+  ++ object trimesh: HornGear
+   ++ vertices: 952
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -51.759  -350.832  -2812.88  1
+   ++ faces: 1554
+   ++ face material applied: Whitemet
+    ++ on faces: 1246
+   ++ face material applied: Steel
+    ++ on faces: 308
+   ++ face material applied: Whitemet
+    ++ on faces: 1246
+   ++ face material applied: Steel
+    ++ on faces: 308
+  ++ object trimesh: HornBlig
+   ++ vertices: 15
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1728.36  443.618  -2124.65  1
+   ++ faces: 16
+   ++ face material applied: BlueLigh
+    ++ on faces: 16
+  ++ object trimesh: HornCon2
+   ++ vertices: 154
+   ++ mapping uv: 154
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      0.555316  948.274  1399.53  1
+   ++ faces: 55
+   ++ face material applied: Glass
+    ++ on faces: 55
+  ++ object trimesh: HornEsta
+   ++ vertices: 132
+   ++ mapping uv: 132
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0371523  448.81  -5683.12  1
+   ++ faces: 256
+   ++ face material applied: Estabili
+    ++ on faces: 158
+   ++ face material applied: Bottesta
+    ++ on faces: 98
+  ++ object trimesh: HornEvt
+   ++ vertices: 352
+   ++ mapping uv: 352
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1.74022  -177.115  -1064.43  1
+   ++ faces: 210
+   ++ face material applied: Lighgrey
+    ++ on faces: 210
+  ++ object trimesh: HornEvt2
+   ++ vertices: 137
+   ++ mapping uv: 137
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1.74022  -181.287  -1064.43  1
+   ++ faces: 54
+   ++ face material applied: Whitemet
+    ++ on faces: 54
+  ++ object trimesh: Hornfus1
+   ++ vertices: 183
+   ++ mapping uv: 183
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373964  184.459  -2399.08  1
+   ++ faces: 212
+   ++ face material applied: Lighgrey
+    ++ on faces: 212
+  ++ object trimesh: HornFus2
+   ++ vertices: 199
+   ++ mapping uv: 199
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373964  362.719  -2058.78  1
+   ++ faces: 199
+   ++ face material applied: FlatWhit
+    ++ on faces: 199
+  ++ object trimesh: HornFus6
+   ++ vertices: 6
+   ++ mapping uv: 6
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      0.299151  23.1691  1809.33  1
+   ++ faces: 4
+   ++ face material applied: FlatWhit
+    ++ on faces: 4
+  ++ object trimesh: HornFuse
+   ++ vertices: 2102
+   ++ mapping uv: 2102
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0372744  475.617  -1140.96  1
+   ++ faces: 2367
+   ++ face material applied: Fuselage
+    ++ on faces: 855
+   ++ face material applied: Topfuse
+    ++ on faces: 338
+   ++ face material applied: Botfuse
+    ++ on faces: 424
+   ++ face material applied: Fuse2
+    ++ on faces: 750
+  ++ object trimesh: HornGea2
+   ++ vertices: 34
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1.0425  -415.354  269.777  1
+   ++ faces: 34
+   ++ face material applied: SilvDeep1
+    ++ on faces: 34
+  ++ object trimesh: HornGrid
+   ++ vertices: 16
+   ++ mapping uv: 16
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0376711  64.5848  1788.19  1
+   ++ faces: 12
+   ++ face material applied: Grid
+    ++ on faces: 12
+  ++ object trimesh: HornGrid0
+   ++ vertices: 8
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0372133  -75.5801  -2349.15  1
+   ++ faces: 4
+  ++ object trimesh: HornInle 
+   ++ vertices: 196
+   ++ mapping uv: 196
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0372744  251.083  -1535.52  1
+   ++ faces: 316
+   ++ face material applied: Inlet
+    ++ on faces: 316
+  ++ object trimesh: HornLfl2
+   ++ vertices: 16
+   ++ mapping uv: 16
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -2189.83  428.832  -2331.33  1
+   ++ faces: 8
+   ++ face material applied: Topwing
+    ++ on faces: 7
+   ++ face material applied: Botwing
+    ++ on faces: 1
+  ++ object trimesh: HornLfl20
+   ++ vertices: 18
+   ++ mapping uv: 18
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      3013.99  407.04  -3832.57  1
+   ++ faces: 8
+   ++ face material applied: Topwing
+    ++ on faces: 6
+   ++ face material applied: Botwing
+    ++ on faces: 2
+  ++ object trimesh: HornLfl3
+   ++ vertices: 18
+   ++ mapping uv: 18
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -3014.06  407.04  -3832.57  1
+   ++ faces: 8
+   ++ face material applied: Topwing
+    ++ on faces: 6
+   ++ face material applied: Botwing
+    ++ on faces: 2
+  ++ object trimesh: HornLfla
+   ++ vertices: 29
+   ++ mapping uv: 29
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -1576.78  554.526  -3787.09  1
+   ++ faces: 14
+   ++ face material applied: Topwing1
+    ++ on faces: 11
+   ++ face material applied: Botwing1
+    ++ on faces: 3
+  ++ object trimesh: HornLfue
+   ++ vertices: 285
+   ++ mapping uv: 285
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373659  -228.841  -1988.48  1
+   ++ faces: 531
+   ++ face material applied: Hornfuel
+    ++ on faces: 531
+  ++ object trimesh: HornLig3
+  ++ object trimesh: HornLrud
+   ++ vertices: 8
+   ++ mapping uv: 8
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -962.129  1206.08  -5212.94  1
+   ++ faces: 7
+   ++ face material applied: Rudder
+    ++ on faces: 7
+  ++ object trimesh: HornMav2
+   ++ vertices: 92
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      779.698  -93.8268  -2655.91  1
+   ++ faces: 172
+   ++ face material applied: Glass
+    ++ on faces: 172
+  ++ object trimesh: HornMave
+   ++ vertices: 96
+   ++ mapping uv: 96
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      778.247  -93.8364  -2691.89  1
+   ++ faces: 160
+   ++ face material applied: Missil2
+    ++ on faces: 160
+  ++ object trimesh: HornMis2
+   ++ vertices: 36
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -907.948  -113.781  -2070.09  1
+   ++ faces: 68
+  ++ object trimesh: HornMis3
+   ++ vertices: 39
+   ++ mapping uv: 39
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -830.401  -113.78  -2422.13  1
+   ++ faces: 36
+   ++ face material applied: Nozzle
+    ++ on faces: 36
+  ++ object trimesh: HornMisi
+   ++ vertices: 179
+   ++ mapping uv: 179
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -830.401  -113.78  -2560.91  1
+   ++ faces: 318
+   ++ face material applied: Missil
+    ++ on faces: 318
+  ++ object trimesh: HornNozz
+   ++ vertices: 296
+   ++ mapping uv: 296
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373354  455.219  -6311.92  1
+   ++ faces: 192
+   ++ face material applied: Nozzle2
+    ++ on faces: 192
+  ++ object trimesh: HornRada
+   ++ vertices: 12
+   ++ mapping uv: 12
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0372744  523.362  -35.998  1
+   ++ faces: 6
+   ++ face material applied: Whitemet
+    ++ on faces: 6
+  ++ object trimesh: HornRfl3
+   ++ vertices: 16
+   ++ mapping uv: 16
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      2189.76  428.832  -2331.33  1
+   ++ faces: 8
+   ++ face material applied: Topwing
+    ++ on faces: 7
+   ++ face material applied: Botwing
+    ++ on faces: 1
+  ++ object trimesh: HornRfla
+   ++ vertices: 29
+   ++ mapping uv: 29
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1576.7  554.526  -3787.09  1
+   ++ faces: 14
+   ++ face material applied: Topwing1
+    ++ on faces: 11
+   ++ face material applied: Botwing1
+    ++ on faces: 3
+  ++ object trimesh: HornRlig
+   ++ vertices: 27
+   ++ mapping uv: 27
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -597.205  1067.09  -3088.41  1
+   ++ faces: 32
+   ++ face material applied: RedLigh
+    ++ on faces: 32
+  ++ object trimesh: HornRRud
+   ++ vertices: 37
+   ++ mapping uv: 37
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1127.82  1417.4  -4546.41  1
+   ++ faces: 45
+   ++ face material applied: Ruddrigh
+    ++ on faces: 45
+  ++ object trimesh: HornRrud
+   ++ vertices: 8
+   ++ mapping uv: 8
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      962.054  1206.08  -5212.94  1
+   ++ faces: 7
+   ++ face material applied: Rudder
+    ++ on faces: 7
+  ++ object trimesh: HornRudd 
+   ++ vertices: 40
+   ++ mapping uv: 40
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373049  1434.81  -4546.38  1
+   ++ faces: 36
+   ++ face material applied: Rudder
+    ++ on faces: 36
+  ++ object trimesh: HornStee
+   ++ vertices: 175
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0373659  250.469  -759.548  1
+   ++ faces: 53
+   ++ face material applied: Steel
+    ++ on faces: 53
+  ++ object trimesh: HornTire
+   ++ vertices: 216
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      1.47155  -666.112  335.042  1
+   ++ faces: 360
+   ++ face material applied: Blactire
+    ++ on faces: 360
+  ++ object trimesh: HornWin2
+   ++ vertices: 24
+   ++ mapping uv: 24
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.0371523  324.293  -3246.33  1
+   ++ faces: 16
+   ++ face material applied: Win2
+    ++ on faces: 16
+  ++ object trimesh: HornWing 
+   ++ vertices: 186
+   ++ mapping uv: 186
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      2.52541  469.306  -3023.4  1
+   ++ faces: 292
+   ++ face material applied: Topwing
+    ++ on faces: 234
+   ++ face material applied: Botwing
+    ++ on faces: 58
+  ++ object trimesh: HornWsup
+   ++ vertices: 56
+   ++ mapping uv: 56
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -0.037549  250.801  -2844.96  1
+   ++ faces: 96
+   ++ face material applied: Weapsupp
+    ++ on faces: 96
+  ++ object trimesh: HornWsup0
+   ++ vertices: 156
+   ++ mapping uv: 156
+   ++ object matrix 
+      1  0  0  0
+      0  1  0  0
+      0  0  1  0
+      -10.7605  29.3817  -2541.2  1
+   ++ faces: 300
+   ++ face material applied: Missil
+    ++ on faces: 300
+ ++ keyframer

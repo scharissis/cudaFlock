@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeArchitecturePreference = i386;
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B19ABC2811380CE4009A7D77 /* load3ds */;
+		activeTarget = 8DD76F620486A84900D96B5E /* load3ds */;
+		addToTargets = (
+			8DD76F620486A84900D96B5E /* load3ds */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = B19ABC3211380CEB009A7D77 /* Code sense */;
+		executables = (
+			B19ABC2811380CE4009A7D77 /* load3ds */,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					834,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					773.20849609375,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 290435524;
+			PBXWorkspaceStateSaveDate = 290435524;
+		};
+		perUserProjectItems = {
+			B14B2912114CFE3B0003CD0E = B14B2912114CFE3B0003CD0E /* PBXTextBookmark */;
+			B14B2913114CFE3B0003CD0E = B14B2913114CFE3B0003CD0E /* PBXTextBookmark */;
+			B14B2914114CFE3B0003CD0E = B14B2914114CFE3B0003CD0E /* PBXTextBookmark */;
+			B14B2915114CFE3B0003CD0E = B14B2915114CFE3B0003CD0E /* PBXTextBookmark */;
+			B14B29CC114D05300003CD0E = B14B29CC114D05300003CD0E /* PBXTextBookmark */;
+			B14B29DE114D05C50003CD0E = B14B29DE114D05C50003CD0E /* PBXTextBookmark */;
+			B14B29DF114D05C50003CD0E = B14B29DF114D05C50003CD0E /* PBXTextBookmark */;
+			B155E8D31138C76A0071859A = B155E8D31138C76A0071859A /* PBXTextBookmark */;
+			B17272F1114E4AEB00E4176D = B17272F1114E4AEB00E4176D /* PBXTextBookmark */;
+			B1A59997114FB371000C6172 /* PBXBookmark */ = B1A59997114FB371000C6172 /* PBXBookmark */;
+			B1A59998114FB371000C6172 /* PBXTextBookmark */ = B1A59998114FB371000C6172 /* PBXTextBookmark */;
+			B1A5999B114FB3AC000C6172 /* PBXTextBookmark */ = B1A5999B114FB3AC000C6172 /* PBXTextBookmark */;
+			B1A5999C114FB3AC000C6172 /* PBXTextBookmark */ = B1A5999C114FB3AC000C6172 /* PBXTextBookmark */;
+			B1A5999D114FB3AC000C6172 /* PBXTextBookmark */ = B1A5999D114FB3AC000C6172 /* PBXTextBookmark */;
+			B1A5999E114FB3AC000C6172 /* PBXTextBookmark */ = B1A5999E114FB3AC000C6172 /* PBXTextBookmark */;
+			B1BA8416114EE5580001FAC6 = B1BA8416114EE5580001FAC6 /* PBXTextBookmark */;
+			B1BA8426114FB1BC0001FAC6 = B1BA8426114FB1BC0001FAC6 /* PBXTextBookmark */;
+			B1E87D9B114A7101004F3713 = B1E87D9B114A7101004F3713 /* PBXTextBookmark */;
+			B1E87DDC114B5604004F3713 = B1E87DDC114B5604004F3713 /* PBXTextBookmark */;
+			B1E87DDD114B5604004F3713 = B1E87DDD114B5604004F3713 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B19ABC3111380CEB009A7D77 /* Source Control */;
+		userBookmarkGroup = B155E75F113814A90071859A /* PBXBookmarkGroup */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 4030}}";
+			sepNavSelRange = "{920, 0}";
+			sepNavVisRange = "{7449, 878}";
+			sepNavWindowFrame = "{{2, 4}, {847, 774}}";
+		};
+	};
+	8DD76F620486A84900D96B5E /* load3ds */ = {
+		activeExec = 0;
+		executables = (
+			B19ABC2811380CE4009A7D77 /* load3ds */,
+		);
+	};
+	B14B2912114CFE3B0003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4511380DB1009A7D77 /* KDCamera.cpp */;
+		name = "KDCamera.cpp: 42";
+		rLen = 0;
+		rLoc = 1025;
+		rType = 0;
+		vrLen = 1045;
+		vrLoc = 245;
+	};
+	B14B2913114CFE3B0003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4611380DB1009A7D77 /* KDCamera.h */;
+		name = "KDCamera.h: 17";
+		rLen = 0;
+		rLoc = 288;
+		rType = 0;
+		vrLen = 762;
+		vrLoc = 0;
+	};
+	B14B2914114CFE3B0003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5211380DB1009A7D77 /* KDTexture3DS.cpp */;
+		name = "KDTexture3DS.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 112;
+		vrLoc = 0;
+	};
+	B14B2915114CFE3B0003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5111380DB1009A7D77 /* KDScene3DS.h */;
+		name = "KDScene3DS.h: 29";
+		rLen = 0;
+		rLoc = 519;
+		rType = 0;
+		vrLen = 776;
+		vrLoc = 0;
+	};
+	B14B29CC114D05300003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5311380DB1009A7D77 /* KDTexture3DS.h */;
+		name = "KDTexture3DS.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 361;
+		vrLoc = 0;
+	};
+	B14B29DE114D05C50003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4C11380DB1009A7D77 /* KDObject.cpp */;
+		name = "KDObject.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 92;
+		vrLoc = 0;
+	};
+	B14B29DF114D05C50003CD0E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4D11380DB1009A7D77 /* KDObject.h */;
+		name = "KDObject.h: 33";
+		rLen = 0;
+		rLoc = 533;
+		rType = 0;
+		vrLen = 666;
+		vrLoc = 69;
+	};
+	B155E75F113814A90071859A /* PBXBookmarkGroup */ = {
+		isa = PBXBookmarkGroup;
+		children = (
+			B155E8641138B9DA0071859A /* PBXTextBookmark */,
+		);
+		name = Root;
+	};
+	B155E8641138B9DA0071859A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5011380DB1009A7D77 /* KDScene3DS.cpp */;
+		name = "KDScene3DS.cpp: 372";
+		rLen = 0;
+		rLoc = 12889;
+		rType = 0;
+		vrLen = 2426;
+		vrLoc = 12242;
+	};
+	B155E8D31138C76A0071859A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4F11380DB1009A7D77 /* KDScene.h */;
+		name = "KDScene.h: 24";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 595;
+		vrLoc = 0;
+	};
+	B17272F1114E4AEB00E4176D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5011380DB1009A7D77 /* KDScene3DS.cpp */;
+		name = "KDScene3DS.cpp: 243";
+		rLen = 0;
+		rLoc = 8240;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 16812;
+	};
+	B19ABC2811380CE4009A7D77 /* load3ds */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = load3ds;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	B19ABC3111380CEB009A7D77 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = warlock;
+			};
+		};
+	};
+	B19ABC3211380CEB009A7D77 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B19ABC4511380DB1009A7D77 /* KDCamera.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 845}}";
+			sepNavSelRange = "{1025, 0}";
+			sepNavVisRange = "{245, 1045}";
+		};
+	};
+	B19ABC4611380DB1009A7D77 /* KDCamera.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 520}}";
+			sepNavSelRange = "{288, 0}";
+			sepNavVisRange = "{0, 762}";
+		};
+	};
+	B19ABC4711380DB1009A7D77 /* KDCommon.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 457}}";
+			sepNavSelRange = "{349, 0}";
+			sepNavVisRange = "{0, 521}";
+			sepNavWindowFrame = "{{38, 30}, {907, 722}}";
+		};
+	};
+	B19ABC4A11380DB1009A7D77 /* KDMaterial3DS.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 556}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 117}";
+		};
+	};
+	B19ABC4B11380DB1009A7D77 /* KDMaterial3DS.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 556}}";
+			sepNavSelRange = "{342, 0}";
+			sepNavVisRange = "{0, 441}";
+			sepNavWindowFrame = "{{38, 30}, {907, 722}}";
+		};
+	};
+	B19ABC4C11380DB1009A7D77 /* KDObject.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 544}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 92}";
+		};
+	};
+	B19ABC4D11380DB1009A7D77 /* KDObject.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 611}}";
+			sepNavSelRange = "{533, 0}";
+			sepNavVisRange = "{69, 666}";
+		};
+	};
+	B19ABC4E11380DB1009A7D77 /* KDScene.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 556}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 87}";
+		};
+	};
+	B19ABC4F11380DB1009A7D77 /* KDScene.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 557}}";
+			sepNavSelRange = "{460, 0}";
+			sepNavVisRange = "{0, 595}";
+		};
+	};
+	B19ABC5011380DB1009A7D77 /* KDScene3DS.cpp */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{13726, 554}\";\n            s = 0;\n        },\n                {\n            r = \"{15560, 418}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 17720}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1012, 6318}}";
+			sepNavSelRange = "{2262, 0}";
+			sepNavVisRange = "{708, 2026}";
+			sepNavWindowFrame = "{{121, 4}, {847, 774}}";
+		};
+	};
+	B19ABC5111380DB1009A7D77 /* KDScene3DS.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 585}}";
+			sepNavSelRange = "{519, 0}";
+			sepNavVisRange = "{0, 776}";
+		};
+	};
+	B19ABC5211380DB1009A7D77 /* KDTexture3DS.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 519}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 112}";
+		};
+	};
+	B19ABC5311380DB1009A7D77 /* KDTexture3DS.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 519}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 361}";
+		};
+	};
+	B19ABC5B11380DBF009A7D77 /* nvMath.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1287}}";
+			sepNavSelRange = "{2651, 0}";
+			sepNavVisRange = "{2574, 626}";
+			sepNavWindowFrame = "{{333, 56}, {907, 722}}";
+		};
+	};
+	B19ABC5C11380DBF009A7D77 /* nvMatrix.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {848, 5122}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1727}";
+			sepNavWindowFrame = "{{15, 51}, {907, 722}}";
+		};
+	};
+	B1A59997114FB371000C6172 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+	};
+	B1A59998114FB371000C6172 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+		name = "main.cpp: 49";
+		rLen = 0;
+		rLoc = 920;
+		rType = 0;
+		vrLen = 874;
+		vrLoc = 7449;
+	};
+	B1A5999B114FB3AC000C6172 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+		name = "main.cpp: 294";
+		rLen = 0;
+		rLoc = 8192;
+		rType = 0;
+		vrLen = 1170;
+		vrLoc = 7157;
+	};
+	B1A5999C114FB3AC000C6172 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4F11380DB1009A7D77 /* KDScene.h */;
+		name = "KDScene.h: 24";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 595;
+		vrLoc = 0;
+	};
+	B1A5999D114FB3AC000C6172 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5011380DB1009A7D77 /* KDScene3DS.cpp */;
+		name = "KDScene3DS.cpp: 51";
+		rLen = 0;
+		rLoc = 2262;
+		rType = 0;
+		vrLen = 2026;
+		vrLoc = 708;
+	};
+	B1A5999E114FB3AC000C6172 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC5011380DB1009A7D77 /* KDScene3DS.cpp */;
+		name = "KDScene3DS.cpp: 51";
+		rLen = 0;
+		rLoc = 2262;
+		rType = 0;
+		vrLen = 2026;
+		vrLoc = 708;
+	};
+	B1BA8416114EE5580001FAC6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+		name = "main.cpp: 49";
+		rLen = 0;
+		rLoc = 921;
+		rType = 0;
+		vrLen = 910;
+		vrLoc = 313;
+	};
+	B1BA8426114FB1BC0001FAC6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* main.cpp */;
+		name = "main.cpp: 49";
+		rLen = 0;
+		rLoc = 921;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 313;
+	};
+	B1E87D9B114A7101004F3713 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4A11380DB1009A7D77 /* KDMaterial3DS.cpp */;
+		name = "KDMaterial3DS.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 117;
+		vrLoc = 0;
+	};
+	B1E87DDC114B5604004F3713 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4B11380DB1009A7D77 /* KDMaterial3DS.h */;
+		name = "KDMaterial3DS.h: 21";
+		rLen = 0;
+		rLoc = 342;
+		rType = 0;
+		vrLen = 441;
+		vrLoc = 0;
+	};
+	B1E87DDD114B5604004F3713 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B19ABC4E11380DB1009A7D77 /* KDScene.cpp */;
+		name = "KDScene.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 87;
+		vrLoc = 0;
+	};
+}
