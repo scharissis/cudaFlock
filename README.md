@@ -1,32 +1,27 @@
-Cuda & OpenGL Flocking Simulator
+CUDA & OpenGL Flocking Simulator
 =
 
-Authors:
--
-+ [Stefano Charissis](scharissis)
-+ [Tomasz Bednarz](tomaszbednarz) (load3ds)
+## Authors:
++ [Stefano Charissis](https://github.com/scharissis)
++ [Tomasz Bednarz](https://github.com/tomaszbednarz) (load3ds)
 
-Requirements:
--
+## Requirements:
 - OpenGL, GLUT, GLEW
 - CMake
 - CUDA 2.2 minimum (>=4.0 for Multi-GPU) with SDK
 
-Compilation:
--
+## Compilation:
 - Modify SDK path in src/CMakeLists.txt
 - Enter sub-directory 'build'
 - Run:
 	cmake ..
 	make
 
-Running:
--
+## Running:
 `./cudagl [-n=<numParticles>] [-devices=<numDevices>]`
 - eg. ./cudagl -n=1024 -devices=1 (To simulate 1024 particles across 1 device)
 	
-Controls:
--
+## Controls:
 - '<b>spacebar</b>' plays/pauses the simulation
 - '<b>ctrl+mouse_scroll</b>' zooms in/out
 - '<b>mouse_left+mouse_move</b>' moves camera around
@@ -45,7 +40,6 @@ Controls:
 
 - '<b>Esc</b>' exits the program
 
-Data:
--
+## Data:
 - New pictures can be placed in 'src'data'
 - New 3DS models can be placed in 'src/load3ds/models/'
