@@ -11,11 +11,13 @@ CUDA & OpenGL Flocking Simulator
 - CUDA 2.2 minimum (>=4.0 for Multi-GPU) with SDK
 
 ## Compilation:
-- Modify SDK path in src/CMakeLists.txt
-- Enter sub-directory 'build'
-- Run:
-	cmake ..
-	make
+- Modify SDK path in (src/CMakeLists.txt) to point to yours
+- Then run:
+	```
+	mkdir build; cd build;
+	cmake ..;	
+	make;
+	```
 
 ## Running:
 `./cudagl [-n=<numParticles>] [-devices=<numDevices>]`
