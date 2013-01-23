@@ -149,7 +149,7 @@ __device__ float3 tile_calculation(float3 pos, float d) {
 #define WRAP(x,m) (((x)<m)?(x):(x-m))  // Mod without divide, works on values from 0 up to 2m
 
 // Rule 2: Boids try to keep a small distance away from other objects (including other boids)
-// you TILE_SIZE should be equal to WARP_SIZE
+// TILE_SIZE should be equal to WARP_SIZE?
 #define TILE_SIZE 256
 __device__ float3 rule2(float3 pos, float3 *dPos, float distance, uint numParticles){
 	float3 c = make_float3(0.0f,0.0f,0.0f);	
@@ -158,31 +158,29 @@ __device__ float3 rule2(float3 pos, float3 *dPos, float distance, uint numPartic
 	float3 tmpP;
 	float x,y,z;
 	float3 bp;
-	uint tmpb,i = 0;
-	for (uint b=0; b<numParticles; ){	
-		     
-			i = threadIdx.x;
-			smemPos[i] = dPos[b+i];
+	uint i = 0;
+	for (uint b=0; b<numParticles; ){			     
+		i = threadIdx.x;
+		smemPos[i] = dPos[b+i];
 
-			__syncthreads();
-			
-			#pragma unroll 8
-			for (i=b; i < b+TILE_SIZE ; i++)
-			{
-				bp = smemPos[i-b];			
-				tmpP = pos;
-					
-				x = (tmpP.x-bp.x); 
-				y = (tmpP.y-bp.y); 
-				z = (tmpP.z-bp.z); 
+		__syncthreads();
+		
+		#pragma unroll 8
+		for (i=b; i < b+TILE_SIZE ; i++) {
+			bp = smemPos[i-b];			
+			tmpP = pos;
+				
+			x = (tmpP.x-bp.x); 
+			y = (tmpP.y-bp.y); 
+			z = (tmpP.z-bp.z); 
 
-				if (x*x+y*y+z*z < distance){
-					c = c - (bp-pos);
-				}		
-			}
-			b =  b+TILE_SIZE;
-			
-			__syncthreads();
+			if (x*x+y*y+z*z < distance){
+				c = c - (bp-pos);
+			}		
+		}
+		b = b+TILE_SIZE;
+		
+		__syncthreads();
 	}	
 	return c;
 }
@@ -195,13 +193,7 @@ __device__ float3 rule2_v2(float3 pos, float3 *dPos, float distance, uint numPar
 	int i, tile;
 	
 	for (i = 0, tile = 0; i < numParticles; i += blockDim.x, tile++) {
-		int idx = tile * blockDim.x + threadIdx.x;
-		
-		// nbody2
-		//sharedPos[threadIdx.x+blockDim.x*threadIdx.y] = positions[WRAP(blockIdx.x + tile, gridDim.x) * p + threadIdx.x];
-		
 		smemPos[threadIdx.x] = dPos[WRAP(blockIdx.x + tile, gridDim.x) * blockDim.x + threadIdx.x];
-		//smemPos[threadIdx.x] = dPos[WRAP(blockIdx.x + tile, gridDim.x) * blockDim.x + threadIdx.x];
 		__syncthreads();	
 		
 		p = tile_calculation(pos, distance);		
@@ -273,10 +265,8 @@ __global__ void step(float3 *dPos_old, float3 *dPos, float3 *dVel, float3 *dTarg
 
 	if (gid >= numParticles) return;
 	
-	// TODO: Weird bug here
-	/// - Unless we do this multiplication it locks up!? (from 17945 onwards
-	//	which is the size of the model - so perhaps it's related to that?)
-	numParticles*=(3.f/4.f); 
+	// TODO: Bug in rule_2 (from 17945 onwards which is the size of the model - so perhaps it's related to that?)
+	numParticles -= 512; //*=(3.f/4.f); 
 	
 	float3 vel = dVel[gid];
 	float3 pos = dPos_old[gid];		
@@ -355,11 +345,11 @@ void move_boids(float *dPos_old, float *dPos, float *dVel, float *dTarget, float
 	float3 grid = make_float3((float)ugrid.x,(float)ugrid.y,(float)ugrid.z);
 	float3 target = make_float3(t[0],t[1],t[2]); // TODO: Use dTarget
 	
-	uint numThreads, numBlocks;
-	uint maxThreads = 256;
+	uint nThreads = 256;
+	uint numBlocks = (numParticles%nThreads==0)?numParticles/nThreads:numParticles/nThreads+1;
 
 	int smem = TILE_SIZE * 3 * sizeof(float3); // Bytes of Shared Memory Required
-	step<<<numParticles/256,256,smem>>>((float3 *)dPos_old, (float3 *)dPos, (float3 *)dVel, (float3 *)dTarget, pc, pv, target, grid, pRadius, numParticles, time, modelFlocking, pictureFlocking, picWidth, picHeight);
+	step<<<numBlocks,nThreads,smem>>>((float3 *)dPos_old, (float3 *)dPos, (float3 *)dVel, (float3 *)dTarget, pc, pv, target, grid, pRadius, numParticles, time, modelFlocking, pictureFlocking, picWidth, picHeight);
 }
 
 } // extern "C"
