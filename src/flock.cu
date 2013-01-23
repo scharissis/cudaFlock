@@ -106,7 +106,6 @@ inline __host__ __device__ float3 normalise(float3 a) {
 	return (a/magnitude(a));
 }
 
-
 // Rule 1: Boids try to fly towards the centre of mass of neighbouring boids
 __device__ float3 rule1(float3 pos, float3 meanPos, uint numParticles) {
 	float3 pc = (meanPos*numParticles - pos)/(float)(numParticles-1);
@@ -153,7 +152,6 @@ __device__ float3 tile_calculation(float3 pos, float d) {
 #define TILE_SIZE 256
 __device__ float3 rule2(float3 pos, float3 *dPos, float distance, uint numParticles){
 	float3 c = make_float3(0.0f,0.0f,0.0f);	
-	distance *= distance;	
 	extern __shared__ float3 smemPos[];
 	float3 tmpP;
 	float x,y,z;
@@ -174,7 +172,7 @@ __device__ float3 rule2(float3 pos, float3 *dPos, float distance, uint numPartic
 			y = (tmpP.y-bp.y); 
 			z = (tmpP.z-bp.z); 
 
-			if (x*x+y*y+z*z < distance){
+			if (x*x+y*y+z*z < distance*distance){
 				c = c - (bp-pos);
 			}		
 		}
@@ -219,7 +217,6 @@ __device__ float3 rule4(float3 target, float3 pos) {
 __device__ float3 rule5(float3 target, float3 pos) {
 	return -1.0f*rule4(target,pos);
 }
-
 
 // Limit speed
 __device__ float3 limit_speed(float3 v, float maxSpeed){
