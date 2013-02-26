@@ -45,5 +45,5 @@ CUDA & OpenGL Flocking Simulator
 - '<b>Esc</b>' exits the program
 
 ## Data:
-- New pictures can be placed in 'src'data'
+- New pictures (.ppm) can be placed in 'src/data'
 - New 3DS models can be placed in 'src/load3ds/models/'
