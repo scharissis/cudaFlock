@@ -5,6 +5,8 @@ CUDA & OpenGL Flocking Simulator
 + [Stefano Charissis](https://github.com/scharissis)
 + [Tomasz Bednarz](https://github.com/tomaszbednarz) (load3ds)
 
+![flock](http://imgur.com/N38RlAs.jpg)
+
 ## Requirements:
 - OpenGL, GLUT, GLEW
 - CMake
